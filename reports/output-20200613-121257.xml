@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200613 12:12:57.143" rpa="false">
+<suite id="s1" name="Ejercicio" source="C:\Users\yuliana\Desktop\Choucair\Ejercicio.robot">
+<test id="s1-t1" name="C05 Clic imagen de enlace de capacidades">
+<kw name="Navegador y logo">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Navegador}</arg>
+</arguments>
+<msg timestamp="20200613 12:12:58.232" level="INFO">Opening browser 'chrome' to base url 'https://www.choucairtesting.com/'.</msg>
+<status status="PASS" starttime="20200613 12:12:58.231" endtime="20200613 12:13:11.128"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200613 12:13:11.129" endtime="20200613 12:13:12.823"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Choucair Testing</arg>
+</arguments>
+<msg timestamp="20200613 12:13:13.223" level="INFO">Page title is 'Choucair Testing'.</msg>
+<status status="PASS" starttime="20200613 12:13:12.824" endtime="20200613 12:13:13.223"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="slideshow"]/div[2]/div/h2</arg>
+<arg>00:05:00</arg>
+</arguments>
+<status status="PASS" starttime="20200613 12:13:13.224" endtime="20200613 12:13:13.332"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="menu-item-6142"]/a</arg>
+</arguments>
+<msg timestamp="20200613 12:13:13.333" level="INFO">Clicking element 'xpath=//*[@id="menu-item-6142"]/a'.</msg>
+<status status="PASS" starttime="20200613 12:13:13.332" endtime="20200613 12:13:14.732"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="main"]/div/div/div/div/section[1]/div/div/div/div/div/div/div/div/img</arg>
+<arg>00:05:00</arg>
+</arguments>
+<status status="PASS" starttime="20200613 12:13:14.733" endtime="20200613 12:13:18.891"></status>
+</kw>
+<status status="PASS" starttime="20200613 12:12:58.229" endtime="20200613 12:13:18.892"></status>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="main"]/div/div/div/div/section[3]</arg>
+</arguments>
+<status status="PASS" starttime="20200613 12:13:18.893" endtime="20200613 12:13:19.928"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="main"]/div/div/div/div/section[3]/div/div/div[1]/div/div/div/div/div/figure/a/img</arg>
+</arguments>
+<msg timestamp="20200613 12:13:19.931" level="INFO">Clicking element 'xpath=//*[@id="main"]/div/div/div/div/section[3]/div/div/div[1]/div/div/div/div/div/figure/a/img'.</msg>
+<status status="PASS" starttime="20200613 12:13:19.929" endtime="20200613 12:13:20.411"></status>
+</kw>
+<kw name="Window.name">
+<msg timestamp="20200613 12:13:20.437" level="FAIL">No keyword with name 'Window.name' found.</msg>
+<status status="FAIL" starttime="20200613 12:13:20.436" endtime="20200613 12:13:20.437"></status>
+</kw>
+<tags>
+<tag>Test5</tag>
+</tags>
+<status status="FAIL" starttime="20200613 12:12:58.217" endtime="20200613 12:13:20.439" critical="yes">No keyword with name 'Window.name' found.</status>
+</test>
+<doc>Existe en un documento de texto con los pasos manuales
+Esta es mi primera automatizacion</doc>
+<status status="FAIL" starttime="20200613 12:12:57.169" endtime="20200613 12:13:20.448"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="0" info="non-critical">noncritical</stat>
+<stat pass="0" fail="1">Test5</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Ejercicio">Ejercicio</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
